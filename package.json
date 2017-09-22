@@ -1,0 +1,38 @@
+{
+  "name": "spike-test",
+  "description": "A test for Spike and pulling from an API like Directus&#39;",
+  "version": "0.0.1",
+  "author": "JustinTBrown",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://bitbucket.org/triggerinteractive/spike-test/issues",
+  "dependencies": {
+    "reshape-standard": "^3.0.0",
+    "spike": "^2.0.0",
+    "spike-css-standards": "^3.0.0",
+    "spike-js-standards": "^2.0.2",
+    "spike-optimize": "^0.1.2",
+    "spike-page-id": "^1.0.0",
+    "spike-records": "^2.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "homepage": "https://bitbucket.org/triggerinteractive/spike-test",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://bitbucket.org/triggerinteractive/spike-test",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava",
+    "start": "spike watch",
+    "build": "spike compile",
+    "prod": "NODE_ENV=production spike compile -e production"
+  }
+}

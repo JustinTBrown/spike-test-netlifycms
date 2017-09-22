@@ -1,0 +1,12 @@
+<extends src='layout.html'>
+  <block name='content'>
+
+    <h1>Test</h1>
+
+    <each loop="artist, index of artists">
+      <!-- <p>{{ index }}: {{ artist.name }}</p> -->
+      <a href="/artists/{{artist.name}}">{{ artist.name }}</a>
+      <hr>
+    </each>
+  </block>
+</extends>
