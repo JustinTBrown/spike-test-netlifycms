@@ -15,7 +15,7 @@ module.exports = {
   plugins: [new Records({
     addDataTo: locals,
     artists: { 
-      url: 'http://localhost:8080/api/1.1/tables/artist/rows?access_token=92g3J2AynDXvoMkkUzVkCs9CeCXLPhrt',
+      url: 'http://165.227.42.179:8080/api/1.1/tables/artist/rows?access_token=92g3J2AynDXvoMkkUzVkCs9CeCXLPhrt',
       transform: (response) => { return response.data },
       template: {
         path: 'views/artist.html',
@@ -23,7 +23,7 @@ module.exports = {
       }
     },
     labels: { 
-      url: 'http://localhost:8080/api/1.1/tables/label/rows?access_token=92g3J2AynDXvoMkkUzVkCs9CeCXLPhrt',
+      url: 'http://165.227.42.179:8080/api/1.1/tables/label/rows?access_token=92g3J2AynDXvoMkkUzVkCs9CeCXLPhrt',
       transform: (response) => { return response.data },
       template: {
         path: 'views/label.html',
