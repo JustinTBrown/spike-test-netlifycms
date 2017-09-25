@@ -2,11 +2,18 @@
   <block name='content'>
 
     <h1>Test</h1>
-
+    
+    <h2>Artists</h2>
     <each loop="artist, index of artists">
-      <!-- <p>{{ index }}: {{ artist.name }}</p> -->
       <a href="/artists/{{artist.slug}}">{{ artist.name }}</a>
       <hr>
     </each>
+
+    <h2>Pages</h2>
+    <each loop="post, index of posts">
+      <a href="/posts/{{post.slug}}">{{ post.title }}</a>
+      <hr>
+    </each>
+
   </block>
 </extends>

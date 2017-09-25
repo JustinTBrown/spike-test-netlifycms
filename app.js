@@ -4,12 +4,6 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const locals = {}
-const collections = new Collections({ 
-  addDataTo: locals, 
-  collections: {
-    posts: { files: 'posts/**' }
-  }
-})
 
 module.exports = {
   devtool: 'source-map',
@@ -39,7 +33,6 @@ module.exports = {
         }
       }
     }),
-    // [collections]
     new Collections({
       addDataTo: locals,
       collections: {
