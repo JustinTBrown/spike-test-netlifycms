@@ -7,7 +7,7 @@ const locals = {}
 const collections = new Collections({ 
   addDataTo: locals, 
   collections: {
-    pages: { files: 'pages/**' }
+    posts: { files: 'pages/**' }
   }
 })
 
