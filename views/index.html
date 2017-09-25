@@ -10,8 +10,8 @@
     </each>
 
     <h2>Pages</h2>
-    <each loop="post, index of posts">
-      <a href="/posts/{{post.slug}}">{{ post.title }}</a>
+    <each loop="post, index of _collections.posts">
+      <a href="{{post._path}}">{{ post.title }}</a>
       <hr>
     </each>
 
