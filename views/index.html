@@ -5,7 +5,7 @@
 
     <each loop="artist, index of artists">
       <!-- <p>{{ index }}: {{ artist.name }}</p> -->
-      <a href="/artists/{{artist.name}}">{{ artist.name }}</a>
+      <a href="/artists/{{artist.slug}}">{{ artist.name }}</a>
       <hr>
     </each>
   </block>
