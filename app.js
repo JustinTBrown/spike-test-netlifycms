@@ -1,8 +1,15 @@
 const Records = require('spike-records')
+const Collections = require('spike-collections')
 const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const locals = {}
+const collections = new Collections({ 
+  addDataTo: locals, 
+  collections: {
+    pages: { files: 'pages/**' }
+  }
+})
 
 module.exports = {
   devtool: 'source-map',
